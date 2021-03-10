@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+body {
+ color:#fff;
+ width: 100%;
+ height: 100%;
+ background-image: url(C:/Users/USER/workspace/portofolio-new/WebContent/mainpic.jpg);
+ background-size: cover;
+}
+
+.masthead {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -100px;
+  background-color:#000;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	text-decoration: none;
+}
+
+.sidebar{
+	position: fixed;
+	left: -250px;
+	width:250px;
+	height: 100%;
+	background: #042331;
+	transition: all .5s ease;
+}
+
+.sidebar header{
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	line-height: 70px;
+	background: #063146;
+	user-select: none;
+	}
+
+.sidebar ul a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 65px;
+	font-size: 20px;
+	color: white;
+	padding-left: 40px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255, 255, 255, .1);
+	border-bottom: 1px solid black;
+	transition: .4s;
+}
+
+ul li:hover a{
+	padding-left: 50px;
+}
+
+.sidebar ul a i{
+	margin-right: 16px;
+}
+
+#check{
+	display: none;
+}
+
+label #btn, label #cancel{
+	position: absolute;
+	cursor: pointer;
+	background: #042331;
+	border-radius: 3px;
+}
+
+label #btn{
+	left: 40px;
+	top: 25px;
+	font-size: 35px;
+	color: white;
+	padding: 6px 12px;
+	transition: all .5s;
+}
+
+label #cancel{
+	z-index: 1111;
+	left: 195px;
+	top:17px;
+	font-size: 30px;
+	color: #0a5275;
+	padding: 4px 9px;
+}
+
+#check:checked ~ label #btn{
+	left: 250px;
+	opacity: 0;
+	pointer-events: none;
+}
+
+
+
